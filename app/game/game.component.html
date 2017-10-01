@@ -1,0 +1,33 @@
+
+<button class="btn" (click)="start()">Start</button>
+
+<p>Timer {{sec}} sec</p>
+
+<button class="btn">Submit</button>
+
+<div class="container">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-3">
+  <div class="box1" (click)="flipx(1)" [class.selected]="x==1" id="b1"><p></p></div>
+  </div>
+  <div class="col-sm-3">
+  <div class="box2" (click)="flipx(2)" [class.selected]="x==2" id="b2"><p></p></div>
+  </div>
+  </div>
+<div class="container">
+<div class="col-sm-3"></div>
+<div class="col-sm-3">
+<div class="box3" (click)="flipx(3)" [class.selected]="x==3" id="b3"><p></p></div>
+</div>
+<div class="col-sm-3">
+<div class="box4" (click)="flipx(4)" [class.selected]="x==4" id="b4"><p></p></div>
+</div>
+</div>
+
+
+<p class="well" id="counter">{{count}}</p>
+
+
+<p>{{check}}</p>
+
+
